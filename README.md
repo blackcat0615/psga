@@ -3,7 +3,7 @@
 ## Overview
 This project aims to explore the impact of image salt-and-pepper noise and language noise on VLA model performance. At the same time, to mitigate the effects of noise, we have introduced the **Propio State Guided Attention (PSGA) module** , which reconstructs VLM features based on propio state to enhance the VLA model's resistance to noise.
 
-Why use propio state? There are two reasons for this. **On one hand, when there is noise in visual and language features, only the propio state is reliable. On the other hand, there is an inherent correlation between propio state and visual information. To some extent, the movement of the robot changes in visual information, and propio state contains some temporal information, which is beneficial for improving VLA model performance.**
+Why use propio state? There are two reasons for this. **On the one hand, when there is noise in visual and language features, only the propio state is reliable. On the other hand, there is an inherent correlation between propio state and visual information. To some extent, the robot's own movement(propio state) influences changes in visual information., and propio state contains some temporal information, which is beneficial for improving VLA model performance.**
 
 The core algorithm enhances VLM features by incorporating proprioceptive state (e.g., robot joint angles, end-effector position) through a cross-attention mechanism. The updated VLM feature is computed as the average of the original VLM feature and the cross-attended feature.
 
@@ -36,7 +36,7 @@ MAX_JOBS=6 pip install flash-attn==2.5.6 --no-build-isolation -v
 
 > Important: Use `transformers>=4.57.0`.
 
-if you want to generate the similiar task desc of your own dataset, you can use the tool.
+if you want to generate the similiar task desc of your own dataset(for language noise), you can use the tool.
 ```bash
 cd tools
 
@@ -46,11 +46,13 @@ python generate_similiar_task_desc.py
 
 ## Training and Evaluation (LIBERO Dataset)
 
+The following steps refer to simvla.
+
 ### 1. Prepare LIBERO Dataset
 
 Download [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) dataset, and place it in `./datasets/metas/`.
 
-For more convenient data downloads, we provide a small tool.
+To make data downloads more convenient, we provide a small tool.
 ```bash
 grep -q "export HF_ENDPOINT=" ~/.bashrc || echo 'export HF_ENDPOINT=https://hf-mirror.com' >> ~/.bashrc && source ~/.bashrc
 
@@ -121,7 +123,7 @@ This repo chooses the Libero object dataset for testing, the metric is success r
 | origin+img_noise(0.05)  |  81%   |   94% |
 | origin+img_noise(0.1)  |  77%   |   95% |
 | origin+img_noise(0.2)  |  48%   |   47% |
-| origin+language noise  |  82%   |   99% |
+| origin+language_noise  |  82%   |   99% |
 
 ### Analysis
 From the experimental results, it can be observed that after incorporating the PSGA module, the model achieves a 9% improvement over the baseline in the absence of noise, which stems from the temporal information embedded in the proprio state. When salt-and-pepper noise is added to the images, under low-noise conditions (≤ 0.1), the model with the PSGA module exhibits reduced sensitivity to noise.
