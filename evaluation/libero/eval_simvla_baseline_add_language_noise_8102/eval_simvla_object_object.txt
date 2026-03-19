@@ -1,0 +1,285 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /opt/conda/envs/libero/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Starting LIBERO evaluation client
+   Client type: websocket
+   Server: ws://127.0.0.1:8102
+   Task suite: libero_object
+   Replan steps: 5
+
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Task suite: libero_object
+   Tasks: 10, Trials per task: 10
+   Max steps: 800
+add img noise: False
+add language noise: True
+Tasks:   0%|          | 0/10 [00:00<?, ?it/s]/root/workspace/sim_vla/LIBERO-master/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+origin task desc: pick up the orange juice and place it in the basket
+origin task desc: pick up the orange juice and place it in the basket
+after add noise, task prompt is: Grab the orange juice and put it into the basket
+
+Grab the orange juice and put ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 9 Ep 0: SUCCESS (steps=114)
+
+Grab the orange juice and put ...:  10%|█         | 1/10 [00:05<00:49,  5.50s/it][A  [OK] Task 9 Ep 1: SUCCESS (steps=106)
+
+Grab the orange juice and put ...:  20%|██        | 2/10 [00:10<00:41,  5.22s/it][A  [OK] Task 9 Ep 2: SUCCESS (steps=122)
+
+Grab the orange juice and put ...:  30%|███       | 3/10 [00:15<00:37,  5.34s/it][A  [OK] Task 9 Ep 3: SUCCESS (steps=114)
+
+Grab the orange juice and put ...:  40%|████      | 4/10 [00:21<00:32,  5.34s/it][A  [OK] Task 9 Ep 4: SUCCESS (steps=111)
+
+Grab the orange juice and put ...:  50%|█████     | 5/10 [00:26<00:26,  5.27s/it][A  [OK] Task 9 Ep 5: SUCCESS (steps=113)
+
+Grab the orange juice and put ...:  60%|██████    | 6/10 [00:31<00:20,  5.23s/it][A  [OK] Task 9 Ep 6: SUCCESS (steps=113)
+
+Grab the orange juice and put ...:  70%|███████   | 7/10 [00:36<00:15,  5.23s/it][A  [OK] Task 9 Ep 7: SUCCESS (steps=121)
+
+Grab the orange juice and put ...:  80%|████████  | 8/10 [00:42<00:10,  5.28s/it][A  [OK] Task 9 Ep 8: SUCCESS (steps=110)
+
+Grab the orange juice and put ...:  90%|█████████ | 9/10 [00:47<00:05,  5.20s/it][A  [OK] Task 9 Ep 9: SUCCESS (steps=112)
+
+Grab the orange juice and put ...: 100%|██████████| 10/10 [00:52<00:00,  5.17s/it][A
+                                                                                  [A   Task 9: 10/10 (100.0%)
+Tasks:  10%|█         | 1/10 [00:54<08:14, 54.90s/it]/root/workspace/sim_vla/LIBERO-master/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+origin task desc: pick up the chocolate pudding and place it in the basket
+origin task desc: pick up the chocolate pudding and place it in the basket
+after add noise, task prompt is: Take the chocolate pudding and put it into the basket
+
+Take the chocolate pudding and...:   0%|          | 0/10 [00:00<?, ?it/s][A  [FAIL] Task 8 Ep 0: FAILURE (steps=810)
+
+Take the chocolate pudding and...:  10%|█         | 1/10 [00:29<04:28, 29.82s/it][A  [FAIL] Task 8 Ep 1: FAILURE (steps=810)
+
+Take the chocolate pudding and...:  20%|██        | 2/10 [01:00<04:03, 30.42s/it][A  [FAIL] Task 8 Ep 2: FAILURE (steps=810)
+
+Take the chocolate pudding and...:  30%|███       | 3/10 [01:31<03:33, 30.52s/it][A  [OK] Task 8 Ep 3: SUCCESS (steps=151)
+
+Take the chocolate pudding and...:  40%|████      | 4/10 [01:37<02:06, 21.08s/it][A  [FAIL] Task 8 Ep 4: FAILURE (steps=810)
+
+Take the chocolate pudding and...:  50%|█████     | 5/10 [02:07<02:01, 24.31s/it][A  [OK] Task 8 Ep 5: SUCCESS (steps=431)
+
+Take the chocolate pudding and...:  60%|██████    | 6/10 [02:24<01:27, 21.81s/it][A  [OK] Task 8 Ep 6: SUCCESS (steps=142)
+
+Take the chocolate pudding and...:  70%|███████   | 7/10 [02:31<00:50, 16.75s/it][A  [FAIL] Task 8 Ep 7: FAILURE (steps=810)
+
+Take the chocolate pudding and...:  80%|████████  | 8/10 [03:01<00:41, 20.93s/it][A  [FAIL] Task 8 Ep 8: FAILURE (steps=810)
+
+Take the chocolate pudding and...:  90%|█████████ | 9/10 [03:31<00:23, 24.00s/it][A  [FAIL] Task 8 Ep 9: FAILURE (steps=810)
+
+Take the chocolate pudding and...: 100%|██████████| 10/10 [04:02<00:00, 26.09s/it][A
+                                                                                  [A   Task 8: 3/10 (30.0%)
+Tasks:  20%|██        | 2/10 [04:58<22:07, 165.98s/it]origin task desc: pick up the milk and place it in the basket
+origin task desc: pick up the milk and place it in the basket
+after add noise, task prompt is: Grab the milk and put it into the basket
+
+Grab the milk and put it into ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 7 Ep 0: SUCCESS (steps=166)
+
+Grab the milk and put it into ...:  10%|█         | 1/10 [00:07<01:03,  7.02s/it][A  [OK] Task 7 Ep 1: SUCCESS (steps=134)
+
+Grab the milk and put it into ...:  20%|██        | 2/10 [00:13<00:52,  6.57s/it][A  [OK] Task 7 Ep 2: SUCCESS (steps=175)
+
+Grab the milk and put it into ...:  30%|███       | 3/10 [00:20<00:49,  7.04s/it][A  [OK] Task 7 Ep 3: SUCCESS (steps=180)
+
+Grab the milk and put it into ...:  40%|████      | 4/10 [00:28<00:43,  7.28s/it][A  [OK] Task 7 Ep 4: SUCCESS (steps=142)
+
+Grab the milk and put it into ...:  50%|█████     | 5/10 [00:34<00:34,  6.97s/it][A  [OK] Task 7 Ep 5: SUCCESS (steps=179)
+
+Grab the milk and put it into ...:  60%|██████    | 6/10 [00:42<00:28,  7.24s/it][A  [OK] Task 7 Ep 6: SUCCESS (steps=184)
+
+Grab the milk and put it into ...:  70%|███████   | 7/10 [00:50<00:22,  7.45s/it][A  [FAIL] Task 7 Ep 7: FAILURE (steps=810)
+
+Grab the milk and put it into ...:  80%|████████  | 8/10 [01:21<00:29, 14.97s/it][A  [OK] Task 7 Ep 8: SUCCESS (steps=137)
+
+Grab the milk and put it into ...:  90%|█████████ | 9/10 [01:28<00:12, 12.28s/it][A  [OK] Task 7 Ep 9: SUCCESS (steps=241)
+
+Grab the milk and put it into ...: 100%|██████████| 10/10 [01:38<00:00, 11.69s/it][A
+                                                                                  [A   Task 7: 9/10 (90.0%)
+Tasks:  30%|███       | 3/10 [06:38<15:50, 135.76s/it]origin task desc: pick up the butter and place it in the basket
+origin task desc: pick up the butter and place it in the basket
+after add noise, task prompt is: Please take the butter and put it into the basket
+
+Please take the butter and put...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 6 Ep 0: SUCCESS (steps=152)
+
+Please take the butter and put...:  10%|█         | 1/10 [00:06<00:59,  6.57s/it][A  [OK] Task 6 Ep 1: SUCCESS (steps=162)
+
+Please take the butter and put...:  20%|██        | 2/10 [00:13<00:54,  6.82s/it][A  [OK] Task 6 Ep 2: SUCCESS (steps=155)
+
+Please take the butter and put...:  30%|███       | 3/10 [00:20<00:48,  6.94s/it][A  [OK] Task 6 Ep 3: SUCCESS (steps=146)
+
+Please take the butter and put...:  40%|████      | 4/10 [00:27<00:40,  6.75s/it][A  [FAIL] Task 6 Ep 4: FAILURE (steps=810)
+
+Please take the butter and put...:  50%|█████     | 5/10 [00:59<01:20, 16.02s/it][A  [OK] Task 6 Ep 5: SUCCESS (steps=151)
+
+Please take the butter and put...:  60%|██████    | 6/10 [01:06<00:51, 12.86s/it][A  [OK] Task 6 Ep 6: SUCCESS (steps=162)
+
+Please take the butter and put...:  70%|███████   | 7/10 [01:13<00:33, 11.01s/it][A  [OK] Task 6 Ep 7: SUCCESS (steps=147)
+
+Please take the butter and put...:  80%|████████  | 8/10 [01:20<00:19,  9.62s/it][A  [OK] Task 6 Ep 8: SUCCESS (steps=146)
+
+Please take the butter and put...:  90%|█████████ | 9/10 [01:26<00:08,  8.62s/it][A  [OK] Task 6 Ep 9: SUCCESS (steps=162)
+
+Please take the butter and put...: 100%|██████████| 10/10 [01:33<00:00,  8.19s/it][A
+                                                                                  [A   Task 6: 9/10 (90.0%)
+Tasks:  40%|████      | 4/10 [08:13<11:58, 119.68s/it]origin task desc: pick up the tomato sauce and place it in the basket
+origin task desc: pick up the tomato sauce and place it in the basket
+after add noise, task prompt is: Take the tomato sauce and put it into the basket
+
+Take the tomato sauce and put ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 5 Ep 0: SUCCESS (steps=138)
+
+Take the tomato sauce and put ...:  10%|█         | 1/10 [00:06<00:57,  6.42s/it][A  [OK] Task 5 Ep 1: SUCCESS (steps=128)
+
+Take the tomato sauce and put ...:  20%|██        | 2/10 [00:12<00:49,  6.13s/it][A  [OK] Task 5 Ep 2: SUCCESS (steps=133)
+
+Take the tomato sauce and put ...:  30%|███       | 3/10 [00:18<00:44,  6.34s/it][A  [OK] Task 5 Ep 3: SUCCESS (steps=130)
+
+Take the tomato sauce and put ...:  40%|████      | 4/10 [00:25<00:38,  6.34s/it][A  [OK] Task 5 Ep 4: SUCCESS (steps=129)
+
+Take the tomato sauce and put ...:  50%|█████     | 5/10 [00:31<00:31,  6.27s/it][A  [OK] Task 5 Ep 5: SUCCESS (steps=141)
+
+Take the tomato sauce and put ...:  60%|██████    | 6/10 [00:38<00:25,  6.43s/it][A  [OK] Task 5 Ep 6: SUCCESS (steps=146)
+
+Take the tomato sauce and put ...:  70%|███████   | 7/10 [00:45<00:19,  6.59s/it][A  [OK] Task 5 Ep 7: SUCCESS (steps=132)
+
+Take the tomato sauce and put ...:  80%|████████  | 8/10 [00:51<00:13,  6.57s/it][A  [OK] Task 5 Ep 8: SUCCESS (steps=138)
+
+Take the tomato sauce and put ...:  90%|█████████ | 9/10 [00:58<00:06,  6.64s/it][A  [OK] Task 5 Ep 9: SUCCESS (steps=131)
+
+Take the tomato sauce and put ...: 100%|██████████| 10/10 [01:04<00:00,  6.55s/it][A
+                                                                                  [A   Task 5: 10/10 (100.0%)
+Tasks:  50%|█████     | 5/10 [09:19<08:21, 100.33s/it]origin task desc: pick up the ketchup and place it in the basket
+origin task desc: pick up the ketchup and place it in the basket
+after add noise, task prompt is: Grab the ketchup and put it into the basket
+
+Grab the ketchup and put it in...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 4 Ep 0: SUCCESS (steps=175)
+
+Grab the ketchup and put it in...:  10%|█         | 1/10 [00:07<01:08,  7.58s/it][A  [OK] Task 4 Ep 1: SUCCESS (steps=135)
+
+Grab the ketchup and put it in...:  20%|██        | 2/10 [00:14<00:55,  6.97s/it][A  [FAIL] Task 4 Ep 2: FAILURE (steps=810)
+
+Grab the ketchup and put it in...:  30%|███       | 3/10 [00:46<02:10, 18.63s/it][A  [FAIL] Task 4 Ep 3: FAILURE (steps=810)
+
+Grab the ketchup and put it in...:  40%|████      | 4/10 [01:18<02:23, 23.96s/it][A  [OK] Task 4 Ep 4: SUCCESS (steps=172)
+
+Grab the ketchup and put it in...:  50%|█████     | 5/10 [01:26<01:30, 18.16s/it][A  [OK] Task 4 Ep 5: SUCCESS (steps=138)
+
+Grab the ketchup and put it in...:  60%|██████    | 6/10 [01:33<00:56, 14.21s/it][A  [OK] Task 4 Ep 6: SUCCESS (steps=206)
+
+Grab the ketchup and put it in...:  70%|███████   | 7/10 [01:42<00:37, 12.58s/it][A  [OK] Task 4 Ep 7: SUCCESS (steps=181)
+
+Grab the ketchup and put it in...:  80%|████████  | 8/10 [01:51<00:22, 11.35s/it][A  [FAIL] Task 4 Ep 8: FAILURE (steps=810)
+
+Grab the ketchup and put it in...:  90%|█████████ | 9/10 [02:24<00:18, 18.20s/it][A  [FAIL] Task 4 Ep 9: FAILURE (steps=810)
+
+Grab the ketchup and put it in...: 100%|██████████| 10/10 [02:55<00:00, 22.09s/it][A
+                                                                                  [A   Task 4: 6/10 (60.0%)
+Tasks:  60%|██████    | 6/10 [12:16<08:25, 126.25s/it]origin task desc: pick up the bbq sauce and place it in the basket
+origin task desc: pick up the bbq sauce and place it in the basket
+after add noise, task prompt is: Grab the barbecue sauce and put it in the basket
+
+Grab the barbecue sauce and pu...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 3 Ep 0: SUCCESS (steps=132)
+
+Grab the barbecue sauce and pu...:  10%|█         | 1/10 [00:06<00:54,  6.07s/it][A  [FAIL] Task 3 Ep 1: FAILURE (steps=810)
+
+Grab the barbecue sauce and pu...:  20%|██        | 2/10 [00:36<02:45, 20.65s/it][A  [FAIL] Task 3 Ep 2: FAILURE (steps=810)
+
+Grab the barbecue sauce and pu...:  30%|███       | 3/10 [01:08<03:00, 25.82s/it][A  [FAIL] Task 3 Ep 3: FAILURE (steps=810)
+
+Grab the barbecue sauce and pu...:  40%|████      | 4/10 [01:40<02:47, 27.93s/it][A  [OK] Task 3 Ep 4: SUCCESS (steps=413)
+
+Grab the barbecue sauce and pu...:  50%|█████     | 5/10 [01:56<01:59, 23.86s/it][A  [OK] Task 3 Ep 5: SUCCESS (steps=128)
+
+Grab the barbecue sauce and pu...:  60%|██████    | 6/10 [02:02<01:11, 17.84s/it][A  [OK] Task 3 Ep 6: SUCCESS (steps=138)
+
+Grab the barbecue sauce and pu...:  70%|███████   | 7/10 [02:09<00:42, 14.12s/it][A  [OK] Task 3 Ep 7: SUCCESS (steps=124)
+
+Grab the barbecue sauce and pu...:  80%|████████  | 8/10 [02:15<00:23, 11.50s/it][A  [OK] Task 3 Ep 8: SUCCESS (steps=172)
+
+Grab the barbecue sauce and pu...:  90%|█████████ | 9/10 [02:22<00:10, 10.24s/it][A  [OK] Task 3 Ep 9: SUCCESS (steps=127)
+
+Grab the barbecue sauce and pu...: 100%|██████████| 10/10 [02:28<00:00,  8.93s/it][A
+                                                                                  [A   Task 3: 7/10 (70.0%)
+Tasks:  70%|███████   | 7/10 [14:45<06:41, 133.99s/it]origin task desc: pick up the salad dressing and place it in the basket
+origin task desc: pick up the salad dressing and place it in the basket
+after add noise, task prompt is: Take the salad dressing and put it into the basket
+
+Take the salad dressing and pu...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 2 Ep 0: SUCCESS (steps=125)
+
+Take the salad dressing and pu...:  10%|█         | 1/10 [00:05<00:52,  5.78s/it][A  [OK] Task 2 Ep 1: SUCCESS (steps=122)
+
+Take the salad dressing and pu...:  20%|██        | 2/10 [00:11<00:46,  5.85s/it][A  [OK] Task 2 Ep 2: SUCCESS (steps=111)
+
+Take the salad dressing and pu...:  30%|███       | 3/10 [00:17<00:39,  5.65s/it][A  [OK] Task 2 Ep 3: SUCCESS (steps=113)
+
+Take the salad dressing and pu...:  40%|████      | 4/10 [00:22<00:33,  5.52s/it][A  [OK] Task 2 Ep 4: SUCCESS (steps=115)
+
+Take the salad dressing and pu...:  50%|█████     | 5/10 [00:27<00:27,  5.48s/it][A  [OK] Task 2 Ep 5: SUCCESS (steps=116)
+
+Take the salad dressing and pu...:  60%|██████    | 6/10 [00:33<00:21,  5.48s/it][A  [OK] Task 2 Ep 6: SUCCESS (steps=121)
+
+Take the salad dressing and pu...:  70%|███████   | 7/10 [00:39<00:16,  5.58s/it][A  [OK] Task 2 Ep 7: SUCCESS (steps=114)
+
+Take the salad dressing and pu...:  80%|████████  | 8/10 [00:44<00:11,  5.60s/it][A  [OK] Task 2 Ep 8: SUCCESS (steps=116)
+
+Take the salad dressing and pu...:  90%|█████████ | 9/10 [00:50<00:05,  5.58s/it][A  [OK] Task 2 Ep 9: SUCCESS (steps=119)
+
+Take the salad dressing and pu...: 100%|██████████| 10/10 [00:56<00:00,  5.62s/it][A
+                                                                                  [A   Task 2: 10/10 (100.0%)
+Tasks:  80%|████████  | 8/10 [15:43<03:39, 109.54s/it]origin task desc: pick up the cream cheese and place it in the basket
+origin task desc: pick up the cream cheese and place it in the basket
+after add noise, task prompt is: Take the cream cheese and put it into the basket
+
+Take the cream cheese and put ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 1 Ep 0: SUCCESS (steps=132)
+
+Take the cream cheese and put ...:  10%|█         | 1/10 [00:05<00:53,  5.92s/it][A  [OK] Task 1 Ep 1: SUCCESS (steps=121)
+
+Take the cream cheese and put ...:  20%|██        | 2/10 [00:11<00:46,  5.83s/it][A  [OK] Task 1 Ep 2: SUCCESS (steps=136)
+
+Take the cream cheese and put ...:  30%|███       | 3/10 [00:17<00:42,  6.04s/it][A  [OK] Task 1 Ep 3: SUCCESS (steps=132)
+
+Take the cream cheese and put ...:  40%|████      | 4/10 [00:23<00:36,  6.02s/it][A  [OK] Task 1 Ep 4: SUCCESS (steps=138)
+
+Take the cream cheese and put ...:  50%|█████     | 5/10 [00:30<00:30,  6.14s/it][A  [OK] Task 1 Ep 5: SUCCESS (steps=133)
+
+Take the cream cheese and put ...:  60%|██████    | 6/10 [00:36<00:24,  6.18s/it][A  [OK] Task 1 Ep 6: SUCCESS (steps=142)
+
+Take the cream cheese and put ...:  70%|███████   | 7/10 [00:43<00:18,  6.30s/it][A  [OK] Task 1 Ep 7: SUCCESS (steps=132)
+
+Take the cream cheese and put ...:  80%|████████  | 8/10 [00:49<00:12,  6.28s/it][A  [OK] Task 1 Ep 8: SUCCESS (steps=137)
+
+Take the cream cheese and put ...:  90%|█████████ | 9/10 [00:55<00:06,  6.33s/it][A  [OK] Task 1 Ep 9: SUCCESS (steps=126)
+
+Take the cream cheese and put ...: 100%|██████████| 10/10 [01:01<00:00,  6.21s/it][A
+                                                                                  [A   Task 1: 10/10 (100.0%)
+Tasks:  90%|█████████ | 9/10 [16:46<01:34, 94.98s/it] origin task desc: pick up the alphabet soup and place it in the basket
+origin task desc: pick up the alphabet soup and place it in the basket
+after add noise, task prompt is: Take the alphabet soup and put it into the basket
+
+Take the alphabet soup and put...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 0 Ep 0: SUCCESS (steps=178)
+
+Take the alphabet soup and put...:  10%|█         | 1/10 [00:07<01:10,  7.80s/it][A  [OK] Task 0 Ep 1: SUCCESS (steps=148)
+
+Take the alphabet soup and put...:  20%|██        | 2/10 [00:14<00:58,  7.30s/it][A  [OK] Task 0 Ep 2: SUCCESS (steps=143)
+
+Take the alphabet soup and put...:  30%|███       | 3/10 [00:21<00:50,  7.20s/it][A  [OK] Task 0 Ep 3: SUCCESS (steps=193)
+
+Take the alphabet soup and put...:  40%|████      | 4/10 [00:30<00:46,  7.77s/it][A  [OK] Task 0 Ep 4: SUCCESS (steps=150)
+
+Take the alphabet soup and put...:  50%|█████     | 5/10 [00:37<00:37,  7.56s/it][A  [FAIL] Task 0 Ep 5: FAILURE (steps=810)
+
+Take the alphabet soup and put...:  60%|██████    | 6/10 [01:10<01:04, 16.03s/it][A  [OK] Task 0 Ep 6: SUCCESS (steps=198)
+
+Take the alphabet soup and put...:  70%|███████   | 7/10 [01:18<00:40, 13.66s/it][A  [OK] Task 0 Ep 7: SUCCESS (steps=159)
+
+Take the alphabet soup and put...:  80%|████████  | 8/10 [01:26<00:23, 11.82s/it][A  [FAIL] Task 0 Ep 8: FAILURE (steps=810)
+
+Take the alphabet soup and put...:  90%|█████████ | 9/10 [01:59<00:18, 18.37s/it][A  [OK] Task 0 Ep 9: SUCCESS (steps=133)
+
+Take the alphabet soup and put...: 100%|██████████| 10/10 [02:05<00:00, 14.67s/it][A
+                                                                                  [A   Task 0: 8/10 (80.0%)
+Tasks: 100%|██████████| 10/10 [18:53<00:00, 104.96s/it]Tasks: 100%|██████████| 10/10 [18:53<00:00, 113.34s/it]
+
+Total success rate: 82/100 (82.0%)

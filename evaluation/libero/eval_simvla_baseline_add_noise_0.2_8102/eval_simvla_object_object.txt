@@ -1,0 +1,266 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /opt/conda/envs/libero/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Starting LIBERO evaluation client
+   Client type: websocket
+   Server: ws://127.0.0.1:8102
+   Task suite: libero_object
+   Replan steps: 5
+
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Task suite: libero_object
+   Tasks: 10, Trials per task: 10
+   Max steps: 800
+add img noise: True
+add img noise ratio: 0.2
+add language noise: False
+Tasks:   0%|          | 0/10 [00:00<?, ?it/s]/root/workspace/sim_vla/LIBERO-master/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+origin task desc: pick up the orange juice and place it in the basket
+
+pick up the orange juice and p...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 9 Ep 0: SUCCESS (steps=132)
+
+pick up the orange juice and p...:  10%|█         | 1/10 [00:09<01:29,  9.93s/it][A  [OK] Task 9 Ep 1: SUCCESS (steps=127)
+
+pick up the orange juice and p...:  20%|██        | 2/10 [00:17<01:09,  8.72s/it][A  [OK] Task 9 Ep 2: SUCCESS (steps=121)
+
+pick up the orange juice and p...:  30%|███       | 3/10 [00:25<00:56,  8.03s/it][A  [OK] Task 9 Ep 3: SUCCESS (steps=117)
+
+pick up the orange juice and p...:  40%|████      | 4/10 [00:33<00:49,  8.31s/it][A  [OK] Task 9 Ep 4: SUCCESS (steps=110)
+
+pick up the orange juice and p...:  50%|█████     | 5/10 [00:40<00:39,  7.86s/it][A  [OK] Task 9 Ep 5: SUCCESS (steps=267)
+
+pick up the orange juice and p...:  60%|██████    | 6/10 [00:58<00:45, 11.28s/it][A  [OK] Task 9 Ep 6: SUCCESS (steps=123)
+
+pick up the orange juice and p...:  70%|███████   | 7/10 [01:06<00:30, 10.01s/it][A  [OK] Task 9 Ep 7: SUCCESS (steps=133)
+
+pick up the orange juice and p...:  80%|████████  | 8/10 [01:13<00:18,  9.24s/it][A  [OK] Task 9 Ep 8: SUCCESS (steps=114)
+
+pick up the orange juice and p...:  90%|█████████ | 9/10 [01:22<00:09,  9.04s/it][A  [OK] Task 9 Ep 9: SUCCESS (steps=135)
+
+pick up the orange juice and p...: 100%|██████████| 10/10 [01:30<00:00,  8.92s/it][A
+                                                                                  [A   Task 9: 10/10 (100.0%)
+Tasks:  10%|█         | 1/10 [01:33<14:01, 93.55s/it]/root/workspace/sim_vla/LIBERO-master/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+origin task desc: pick up the chocolate pudding and place it in the basket
+
+pick up the chocolate pudding ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [FAIL] Task 8 Ep 0: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  10%|█         | 1/10 [00:40<06:02, 40.24s/it][A  [FAIL] Task 8 Ep 1: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  20%|██        | 2/10 [01:23<05:38, 42.25s/it][A  [FAIL] Task 8 Ep 2: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  30%|███       | 3/10 [02:06<04:57, 42.46s/it][A  [FAIL] Task 8 Ep 3: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  40%|████      | 4/10 [02:49<04:14, 42.47s/it][A  [FAIL] Task 8 Ep 4: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  50%|█████     | 5/10 [03:30<03:30, 42.19s/it][A  [FAIL] Task 8 Ep 5: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  60%|██████    | 6/10 [04:09<02:44, 41.05s/it][A  [FAIL] Task 8 Ep 6: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  70%|███████   | 7/10 [04:53<02:06, 42.03s/it][A  [FAIL] Task 8 Ep 7: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  80%|████████  | 8/10 [05:36<01:24, 42.29s/it][A  [FAIL] Task 8 Ep 8: FAILURE (steps=810)
+
+pick up the chocolate pudding ...:  90%|█████████ | 9/10 [06:18<00:42, 42.28s/it][A  [FAIL] Task 8 Ep 9: FAILURE (steps=810)
+
+pick up the chocolate pudding ...: 100%|██████████| 10/10 [07:01<00:00, 42.39s/it][A
+                                                                                  [A   Task 8: 0/10 (0.0%)
+Tasks:  20%|██        | 2/10 [08:36<38:16, 287.12s/it]origin task desc: pick up the milk and place it in the basket
+
+pick up the milk and place it ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 7 Ep 0: SUCCESS (steps=146)
+
+pick up the milk and place it ...:  10%|█         | 1/10 [00:08<01:14,  8.31s/it][A  [FAIL] Task 7 Ep 1: FAILURE (steps=810)
+
+pick up the milk and place it ...:  20%|██        | 2/10 [00:50<03:46, 28.25s/it][A  [FAIL] Task 7 Ep 2: FAILURE (steps=810)
+
+pick up the milk and place it ...:  30%|███       | 3/10 [01:33<04:03, 34.76s/it][A  [OK] Task 7 Ep 3: SUCCESS (steps=136)
+
+pick up the milk and place it ...:  40%|████      | 4/10 [01:40<02:25, 24.17s/it][A  [OK] Task 7 Ep 4: SUCCESS (steps=162)
+
+pick up the milk and place it ...:  50%|█████     | 5/10 [01:50<01:33, 18.73s/it][A  [OK] Task 7 Ep 5: SUCCESS (steps=141)
+
+pick up the milk and place it ...:  60%|██████    | 6/10 [02:00<01:03, 15.89s/it][A  [FAIL] Task 7 Ep 6: FAILURE (steps=810)
+
+pick up the milk and place it ...:  70%|███████   | 7/10 [02:42<01:12, 24.31s/it][A  [OK] Task 7 Ep 7: SUCCESS (steps=149)
+
+pick up the milk and place it ...:  80%|████████  | 8/10 [02:50<00:38, 19.31s/it][A  [FAIL] Task 7 Ep 8: FAILURE (steps=810)
+
+pick up the milk and place it ...:  90%|█████████ | 9/10 [03:33<00:26, 26.53s/it][A  [FAIL] Task 7 Ep 9: FAILURE (steps=810)
+
+pick up the milk and place it ...: 100%|██████████| 10/10 [04:15<00:00, 31.53s/it][A
+                                                                                  [A   Task 7: 5/10 (50.0%)
+Tasks:  30%|███       | 3/10 [12:53<31:54, 273.44s/it]origin task desc: pick up the butter and place it in the basket
+
+pick up the butter and place i...:   0%|          | 0/10 [00:00<?, ?it/s][A  [FAIL] Task 6 Ep 0: FAILURE (steps=810)
+
+pick up the butter and place i...:  10%|█         | 1/10 [00:39<05:51, 39.10s/it][A  [FAIL] Task 6 Ep 1: FAILURE (steps=810)
+
+pick up the butter and place i...:  20%|██        | 2/10 [01:17<05:08, 38.56s/it][A  [FAIL] Task 6 Ep 2: FAILURE (steps=810)
+
+pick up the butter and place i...:  30%|███       | 3/10 [01:57<04:36, 39.52s/it][A  [FAIL] Task 6 Ep 3: FAILURE (steps=810)
+
+pick up the butter and place i...:  40%|████      | 4/10 [02:39<04:01, 40.32s/it][A  [FAIL] Task 6 Ep 4: FAILURE (steps=810)
+
+pick up the butter and place i...:  50%|█████     | 5/10 [03:17<03:18, 39.64s/it][A  [FAIL] Task 6 Ep 5: FAILURE (steps=810)
+
+pick up the butter and place i...:  60%|██████    | 6/10 [03:59<02:40, 40.19s/it][A  [FAIL] Task 6 Ep 6: FAILURE (steps=810)
+
+pick up the butter and place i...:  70%|███████   | 7/10 [04:41<02:02, 40.76s/it][A  [FAIL] Task 6 Ep 7: FAILURE (steps=810)
+
+pick up the butter and place i...:  80%|████████  | 8/10 [05:23<01:22, 41.12s/it][A  [FAIL] Task 6 Ep 8: FAILURE (steps=810)
+
+pick up the butter and place i...:  90%|█████████ | 9/10 [06:01<00:40, 40.44s/it][A  [FAIL] Task 6 Ep 9: FAILURE (steps=810)
+
+pick up the butter and place i...: 100%|██████████| 10/10 [06:44<00:00, 40.95s/it][A
+                                                                                  [A   Task 6: 0/10 (0.0%)
+Tasks:  40%|████      | 4/10 [19:38<32:32, 325.47s/it]origin task desc: pick up the tomato sauce and place it in the basket
+
+pick up the tomato sauce and p...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 5 Ep 0: SUCCESS (steps=145)
+
+pick up the tomato sauce and p...:  10%|█         | 1/10 [00:08<01:13,  8.18s/it][A  [OK] Task 5 Ep 1: SUCCESS (steps=138)
+
+pick up the tomato sauce and p...:  20%|██        | 2/10 [00:16<01:05,  8.22s/it][A  [OK] Task 5 Ep 2: SUCCESS (steps=150)
+
+pick up the tomato sauce and p...:  30%|███       | 3/10 [00:25<01:00,  8.70s/it][A  [OK] Task 5 Ep 3: SUCCESS (steps=134)
+
+pick up the tomato sauce and p...:  40%|████      | 4/10 [00:33<00:50,  8.43s/it][A  [OK] Task 5 Ep 4: SUCCESS (steps=240)
+
+pick up the tomato sauce and p...:  50%|█████     | 5/10 [00:50<00:56, 11.32s/it][A  [OK] Task 5 Ep 5: SUCCESS (steps=208)
+
+pick up the tomato sauce and p...:  60%|██████    | 6/10 [01:02<00:46, 11.58s/it][A  [OK] Task 5 Ep 6: SUCCESS (steps=162)
+
+pick up the tomato sauce and p...:  70%|███████   | 7/10 [01:11<00:32, 10.92s/it][A  [OK] Task 5 Ep 7: SUCCESS (steps=162)
+
+pick up the tomato sauce and p...:  80%|████████  | 8/10 [01:21<00:20, 10.38s/it][A  [OK] Task 5 Ep 8: SUCCESS (steps=136)
+
+pick up the tomato sauce and p...:  90%|█████████ | 9/10 [01:28<00:09,  9.56s/it][A  [OK] Task 5 Ep 9: SUCCESS (steps=118)
+
+pick up the tomato sauce and p...: 100%|██████████| 10/10 [01:37<00:00,  9.37s/it][A
+                                                                                  [A   Task 5: 10/10 (100.0%)
+Tasks:  50%|█████     | 5/10 [21:17<20:18, 243.77s/it]origin task desc: pick up the ketchup and place it in the basket
+
+pick up the ketchup and place ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [FAIL] Task 4 Ep 0: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  10%|█         | 1/10 [00:41<06:15, 41.68s/it][A  [FAIL] Task 4 Ep 1: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  20%|██        | 2/10 [01:19<05:16, 39.59s/it][A  [FAIL] Task 4 Ep 2: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  30%|███       | 3/10 [02:01<04:42, 40.34s/it][A  [FAIL] Task 4 Ep 3: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  40%|████      | 4/10 [02:41<04:01, 40.26s/it][A  [OK] Task 4 Ep 4: SUCCESS (steps=404)
+
+pick up the ketchup and place ...:  50%|█████     | 5/10 [03:06<02:54, 34.84s/it][A  [FAIL] Task 4 Ep 5: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  60%|██████    | 6/10 [03:49<02:30, 37.73s/it][A  [FAIL] Task 4 Ep 6: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  70%|███████   | 7/10 [04:31<01:57, 39.08s/it][A  [FAIL] Task 4 Ep 7: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  80%|████████  | 8/10 [05:11<01:18, 39.30s/it][A  [FAIL] Task 4 Ep 8: FAILURE (steps=810)
+
+pick up the ketchup and place ...:  90%|█████████ | 9/10 [05:52<00:39, 39.99s/it][A  [FAIL] Task 4 Ep 9: FAILURE (steps=810)
+
+pick up the ketchup and place ...: 100%|██████████| 10/10 [06:32<00:00, 39.83s/it][A
+                                                                                  [A   Task 4: 1/10 (10.0%)
+Tasks:  60%|██████    | 6/10 [27:50<19:38, 294.64s/it]origin task desc: pick up the bbq sauce and place it in the basket
+
+pick up the bbq sauce and plac...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 3 Ep 0: SUCCESS (steps=149)
+
+pick up the bbq sauce and plac...:  10%|█         | 1/10 [00:08<01:19,  8.88s/it][A  [OK] Task 3 Ep 1: SUCCESS (steps=149)
+
+pick up the bbq sauce and plac...:  20%|██        | 2/10 [00:17<01:08,  8.55s/it][A  [FAIL] Task 3 Ep 2: FAILURE (steps=810)
+
+pick up the bbq sauce and plac...:  30%|███       | 3/10 [00:58<02:44, 23.46s/it][A  [OK] Task 3 Ep 3: SUCCESS (steps=290)
+
+pick up the bbq sauce and plac...:  40%|████      | 4/10 [01:14<02:03, 20.54s/it][A  [OK] Task 3 Ep 4: SUCCESS (steps=168)
+
+pick up the bbq sauce and plac...:  50%|█████     | 5/10 [01:23<01:22, 16.55s/it][A  [FAIL] Task 3 Ep 5: FAILURE (steps=810)
+
+pick up the bbq sauce and plac...:  60%|██████    | 6/10 [02:05<01:39, 24.92s/it][A  [OK] Task 3 Ep 6: SUCCESS (steps=162)
+
+pick up the bbq sauce and plac...:  70%|███████   | 7/10 [02:14<00:59, 19.74s/it][A  [OK] Task 3 Ep 7: SUCCESS (steps=130)
+
+pick up the bbq sauce and plac...:  80%|████████  | 8/10 [02:23<00:32, 16.42s/it][A  [FAIL] Task 3 Ep 8: FAILURE (steps=810)
+
+pick up the bbq sauce and plac...:  90%|█████████ | 9/10 [03:06<00:24, 24.60s/it][A  [OK] Task 3 Ep 9: SUCCESS (steps=172)
+
+pick up the bbq sauce and plac...: 100%|██████████| 10/10 [03:16<00:00, 20.12s/it][A
+                                                                                  [A   Task 3: 7/10 (70.0%)
+Tasks:  70%|███████   | 7/10 [31:08<13:08, 262.79s/it]origin task desc: pick up the salad dressing and place it in the basket
+
+pick up the salad dressing and...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 2 Ep 0: SUCCESS (steps=136)
+
+pick up the salad dressing and...:  10%|█         | 1/10 [00:07<01:10,  7.80s/it][A  [OK] Task 2 Ep 1: SUCCESS (steps=126)
+
+pick up the salad dressing and...:  20%|██        | 2/10 [00:17<01:12,  9.03s/it][A  [OK] Task 2 Ep 2: SUCCESS (steps=139)
+
+pick up the salad dressing and...:  30%|███       | 3/10 [00:26<01:02,  8.93s/it][A  [OK] Task 2 Ep 3: SUCCESS (steps=138)
+
+pick up the salad dressing and...:  40%|████      | 4/10 [00:34<00:51,  8.60s/it][A  [OK] Task 2 Ep 4: SUCCESS (steps=130)
+
+pick up the salad dressing and...:  50%|█████     | 5/10 [00:44<00:44,  8.99s/it][A  [OK] Task 2 Ep 5: SUCCESS (steps=123)
+
+pick up the salad dressing and...:  60%|██████    | 6/10 [00:52<00:34,  8.64s/it][A  [OK] Task 2 Ep 6: SUCCESS (steps=125)
+
+pick up the salad dressing and...:  70%|███████   | 7/10 [01:01<00:26,  8.98s/it][A  [OK] Task 2 Ep 7: SUCCESS (steps=124)
+
+pick up the salad dressing and...:  80%|████████  | 8/10 [01:11<00:18,  9.21s/it][A  [OK] Task 2 Ep 8: SUCCESS (steps=128)
+
+pick up the salad dressing and...:  90%|█████████ | 9/10 [01:19<00:08,  8.93s/it][A  [FAIL] Task 2 Ep 9: FAILURE (steps=810)
+
+pick up the salad dressing and...: 100%|██████████| 10/10 [02:05<00:00, 20.12s/it][A
+                                                                                  [A   Task 2: 9/10 (90.0%)
+Tasks:  80%|████████  | 8/10 [33:14<07:18, 219.28s/it]origin task desc: pick up the cream cheese and place it in the basket
+
+pick up the cream cheese and p...:   0%|          | 0/10 [00:00<?, ?it/s][A  [OK] Task 1 Ep 0: SUCCESS (steps=312)
+
+pick up the cream cheese and p...:  10%|█         | 1/10 [00:19<02:59, 19.91s/it][A  [FAIL] Task 1 Ep 1: FAILURE (steps=810)
+
+pick up the cream cheese and p...:  20%|██        | 2/10 [01:04<04:33, 34.15s/it][A  [OK] Task 1 Ep 2: SUCCESS (steps=186)
+
+pick up the cream cheese and p...:  30%|███       | 3/10 [01:14<02:43, 23.30s/it][A  [OK] Task 1 Ep 3: SUCCESS (steps=163)
+
+pick up the cream cheese and p...:  40%|████      | 4/10 [01:23<01:47, 17.86s/it][A  [FAIL] Task 1 Ep 4: FAILURE (steps=810)
+
+pick up the cream cheese and p...:  50%|█████     | 5/10 [02:07<02:14, 26.99s/it][A  [OK] Task 1 Ep 5: SUCCESS (steps=215)
+
+pick up the cream cheese and p...:  60%|██████    | 6/10 [02:19<01:27, 21.87s/it][A  [FAIL] Task 1 Ep 6: FAILURE (steps=810)
+
+pick up the cream cheese and p...:  70%|███████   | 7/10 [03:01<01:25, 28.56s/it][A  [OK] Task 1 Ep 7: SUCCESS (steps=146)
+
+pick up the cream cheese and p...:  80%|████████  | 8/10 [03:09<00:44, 22.16s/it][A  [OK] Task 1 Ep 8: SUCCESS (steps=131)
+
+pick up the cream cheese and p...:  90%|█████████ | 9/10 [03:17<00:17, 17.61s/it][A  [FAIL] Task 1 Ep 9: FAILURE (steps=810)
+
+pick up the cream cheese and p...: 100%|██████████| 10/10 [04:00<00:00, 25.56s/it][A
+                                                                                  [A   Task 1: 6/10 (60.0%)
+Tasks:  90%|█████████ | 9/10 [37:16<03:46, 226.36s/it]origin task desc: pick up the alphabet soup and place it in the basket
+
+pick up the alphabet soup and ...:   0%|          | 0/10 [00:00<?, ?it/s][A  [FAIL] Task 0 Ep 0: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  10%|█         | 1/10 [00:40<06:01, 40.14s/it][A  [FAIL] Task 0 Ep 1: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  20%|██        | 2/10 [01:22<05:29, 41.15s/it][A  [FAIL] Task 0 Ep 2: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  30%|███       | 3/10 [02:05<04:54, 42.01s/it][A  [FAIL] Task 0 Ep 3: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  40%|████      | 4/10 [02:47<04:13, 42.24s/it][A  [FAIL] Task 0 Ep 4: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  50%|█████     | 5/10 [03:26<03:24, 40.91s/it][A  [FAIL] Task 0 Ep 5: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  60%|██████    | 6/10 [04:07<02:44, 41.19s/it][A  [FAIL] Task 0 Ep 6: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  70%|███████   | 7/10 [04:53<02:07, 42.48s/it][A  [FAIL] Task 0 Ep 7: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  80%|████████  | 8/10 [05:35<01:25, 42.51s/it][A  [FAIL] Task 0 Ep 8: FAILURE (steps=810)
+
+pick up the alphabet soup and ...:  90%|█████████ | 9/10 [06:19<00:42, 42.85s/it][A  [FAIL] Task 0 Ep 9: FAILURE (steps=810)
+
+pick up the alphabet soup and ...: 100%|██████████| 10/10 [07:02<00:00, 42.93s/it][A
+                                                                                  [A   Task 0: 0/10 (0.0%)
+Tasks: 100%|██████████| 10/10 [44:19<00:00, 287.22s/it]Tasks: 100%|██████████| 10/10 [44:19<00:00, 265.96s/it]
+
+Total success rate: 48/100 (48.0%)
