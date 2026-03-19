@@ -3,7 +3,7 @@
 ## Overview
 This project aims to explore the impact of image salt-and-pepper noise and language noise on VLA model performance. At the same time, to mitigate the effects of noise, we have introduced the **Propio State Guided Attention (PSGA) module** , which reconstructs VLM features based on propio state to enhance the VLA model's resistance to noise.
 
-Why use ontological information? There are two reasons for this. **On one hand, when there is noise in visual and language features, only the propio state is reliable. On the other hand, there is an inherent correlation between propio state and visual information. To some extent, the movement of the robot changes in visual information, and propio state contains some temporal information, which is beneficial for improving VLA model performance.**
+Why use propio state? There are two reasons for this. **On one hand, when there is noise in visual and language features, only the propio state is reliable. On the other hand, there is an inherent correlation between propio state and visual information. To some extent, the movement of the robot changes in visual information, and propio state contains some temporal information, which is beneficial for improving VLA model performance.**
 
 The core algorithm enhances VLM features by incorporating proprioceptive state (e.g., robot joint angles, end-effector position) through a cross-attention mechanism. The updated VLM feature is computed as the average of the original VLM feature and the cross-attended feature.
 
@@ -44,7 +44,7 @@ python generate_similiar_task_desc.py
 
 ```
 
-## Training (LIBERO Dataset)
+## Training and Evaluation (LIBERO Dataset)
 
 ### 1. Prepare LIBERO Dataset
 
@@ -91,6 +91,7 @@ bash train_smolvlm_large.sh
 ```
 
 ### 5. Evaluation
+You should follow the evaluation/libero/README.md. Unlike simvla, we have introduced three new variables in run_eval_object.sh: add_img_noise_ratio, add_language_noise, and add_img_noise, which users can set based on their needs.
 
 ```bash
 cd evaluation/libero
@@ -120,7 +121,7 @@ This repo chooses the Libero object dataset for testing, the metric is success r
 | origin+img_noise(0.05)  |  81%   |   94% |
 | origin+img_noise(0.1)  |  77%   |   95% |
 | origin+img_noise(0.2)  |  48%   |   47% |
-| origin+language  |  82%   |   99% |
+| origin+language noise  |  82%   |   99% |
 
 ### Analysis
 From the experimental results, it can be observed that after incorporating the PSGA module, the model achieves a 9% improvement over the baseline in the absence of noise, which stems from the temporal information embedded in the proprio state. When salt-and-pepper noise is added to the images, under low-noise conditions (≤ 0.1), the model with the PSGA module exhibits reduced sensitivity to noise.

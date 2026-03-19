@@ -1,6 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# SimVLA LIBERO Evaluation Script - Single Task (object)
+# PSGA LIBERO Evaluation Script - Single Task (object)
 # =============================================================================
 
 set -e
@@ -22,12 +22,12 @@ echo ""
 # =============================================================================
 PORT=${1:-8102}                 # WebSocket server port
 NUM_TRIALS=${2:-10}             # Number of trials per task
-OUTPUT_PREFIX=${3:-"eval_simvla_object"}  # Prefix for log files
+OUTPUT_PREFIX=${3:-"eval_psga_object"}  # Prefix for log files
 GPU=${4:-0}                      # GPU device ID to use (default: 0)
 
 
 # Create output directory
-OUTPUT_DIR="./reeval/eval_simvla_exp3_att_add_language_noise_${PORT}"
+OUTPUT_DIR="./eval_psga_exp2_att_add_language_noise_${PORT}"
 mkdir -p "$OUTPUT_DIR"
 
 echo "Starting LIBERO evaluation for object task..."
