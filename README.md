@@ -113,8 +113,9 @@ This repo chooses the Libero object dataset for testing, the metric is success r
 
 ### Results
 
-[baseline model checkpoint] todo
-[PSGA model checkpoint] todo
+**[baseline model checkpoint] todo**  
+
+**[PSGA model checkpoint] todo**  
 
 | experiments setting | baseline(simvla) | PSGA |
 |:-------:|:--------:|:-------:|
