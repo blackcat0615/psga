@@ -1,14 +1,14 @@
-# PSGA: Propio State Guided Attention To Resist VLA Attack
+# PSGA: Proprio State Guided Attention To Resist VLA Attack
 
 ## Overview
-This project aims to explore the impact of image salt-and-pepper noise and language noise on VLA model performance. At the same time, to mitigate the effects of noise, we have introduced the **Propio State Guided Attention (PSGA) module** , which reconstructs VLM features based on propio state to enhance the VLA model's resistance to noise.
+This project aims to explore the impact of image salt-and-pepper noise and language noise on VLA model performance. At the same time, to mitigate the effects of noise, we have introduced the **proprio State Guided Attention (PSGA) module** , which reconstructs VLM features based on proprio state to enhance the VLA model's resistance to noise.
 
-Why use propio state? There are two reasons for this. **On the one hand, when there is noise in visual and language features, only the propio state is reliable. On the other hand, there is an inherent correlation between propio state and visual information. To some extent, the robot's own movement(propio state) influences changes in visual information., and propio state contains some temporal information, which is beneficial for improving VLA model performance.**
+Why use proprio state? There are two reasons for this. **On the one hand, when there is noise in visual and language features, only the proprio state is reliable. On the other hand, there is an inherent correlation between proprio state and visual information. To some extent, the robot's own movement(proprio state) influences changes in visual information., and proprio state contains some temporal information, which is beneficial for improving VLA model performance.**
 
 The core algorithm enhances VLM features by incorporating proprioceptive state (e.g., robot joint angles, end-effector position) through a cross-attention mechanism. The updated VLM feature is computed as the average of the original VLM feature and the cross-attended feature.
 
 ```python
-vlm_feature = 0.5 * (vlm_feature + cross_att(q=vlm_feature, k=propio_state, v=propio_state))
+vlm_feature = 0.5 * (vlm_feature + cross_att(q=vlm_feature, k=proprio_state, v=proprio_state))
 
 ```
 
